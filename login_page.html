@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #F1DEDE;
+            width: 1440px;
+            height: 1024px;
+
+        }
+       #로고 {
+        position: absolute;
+        margin-left: 403px;
+        margin-right: 362px;
+        margin-top: 89px;
+        margin-top:117px;
+       }
+       button {
+            background-color: #FEFCC7;
+            border-radius: 20px;
+            border-style: none;
+            position: absolute;
+            width: 271px;
+            height: 75px;
+            left: 585px;
+            top: 739px;
+        }
+        button > label {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #B45656;
+        }
+        #id {
+            width : 703px;
+            height: 69px;
+            position: absolute;
+            width: 703px;
+            height: 69px;
+            left: 360px;
+            top: 490px;
+            background: #FEFCC7;
+            border-style: none;
+        }
+        [placeholder] {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        input::placeholder {
+            color: #B45656;
+        }
+        #pw {
+            position: absolute;
+            width: 703px;
+            height: 69px;
+            left: 360px;
+            top: 595px;
+            background: #FEFCC7;
+            border-style: none;
+        }
+        .auto-login {
+            position: absolute;
+            width: 150px;
+            height: 27px;
+            left: 360px;
+            top: 688px;
+        }
+        .auto-login > input {
+            position: absolute;
+            width: 27px;
+            height: 27px;
+        }
+        .auto-login > label {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #9F9292;
+        }
+    </style>
+</head>
+<body>
+        <img src="./login_page_img/로고.png" alt="로고" id="로고"/>
+        <input type="text" id="id" placeholder="아이디" /><br/>
+        <input type="password" id="pw"placeholder="비밀번호" /><br/>
+        <div class="auto-login">
+            <input type="checkbox" checked/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>자동로그인</label>
+        </div>
+        
+        <button id="로그인버튼"><label>로그인</label></button>    
+    
+
+</body>
+</html>
