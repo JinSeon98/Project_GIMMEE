@@ -59,6 +59,10 @@
         input::placeholder {
             color: #B45656;
         }
+        input:focus {
+            color: #B45656;
+            outline: none;
+        }
         #pw {
             position: absolute;
             width: 703px;
@@ -89,17 +93,65 @@
             text-align: center;
             color: #9F9292;
         }
+        .look_box {
+            position: absolute;
+            width: 688px;
+            height: 38px;
+            left: 377px;
+            right : 375px;
+            top: 870px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            
+            line-height: 29px;
+            color: rgba(0, 0, 0, 0.34);
+
+            padding: 0 30px;
+        }
+        ul,li {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 10px;   
+            padding-left: 50px;
+        }
+        div>ul>li::after {
+            content: "|";
+            float: right;
+            display: block;
+        }
+        div>ul>li:last-child::after{
+            content: "";
+        }
     </style>
 </head>
 <body>
         <img src="./login_page_img/로고.png" alt="로고" id="로고"/>
-        <input type="text" id="id" placeholder="아이디" /><br/>
-        <input type="password" id="pw"placeholder="비밀번호" /><br/>
+        <input type="text" id="id" placeholder="  아이디" /><br/>
+        <input type="password" id="pw"placeholder="  비밀번호" /><br/>
         <div class="auto-login">
             <input type="checkbox" checked/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>자동로그인</label>
         </div>
         
         <button id="로그인버튼"><label>로그인</label></button>    
+        <div class="look_box">
+            <ul>
+                <li><a href="#" class="link_id_find">아이디 찾기</a></li>
+                <li><a href="#" class="link_pw_find">비밀번호 찾기</a></li>
+                <li><a href="#" class="link_join">회원 가입</a></li>
+            </ul>
+            
+        </div>
     
 
 </body>
