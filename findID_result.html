@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기 결과</title>
+</head>
+<style>
+    body {
+        background-color: #F1DEDE;
+        width: 1440px;
+        height: 1024px;
+
+        }
+    #작은로고 {
+        width: 675px;
+        height: 284px;
+        margin-top: 41px;
+        right: 826px;
+        bottom: 699px;
+    }
+    p {
+        position: fixed;
+        width: 712px;
+        height: 66px;
+        left: 377px;
+        top: 528px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+
+        color: #803434;
+        margin: 0%;
+    }
+    .box {
+        position: fixed;
+        width: 837px;
+        height: 401px;
+        left: 314px;
+        top: 393px;
+
+        background: #FEFCC7;
+        border-radius: 30px;
+    }
+    button {
+        position: fixed;
+        width: 245px;
+        height: 80px;
+        background: #D9D9D9;
+        border-radius: 30px;
+        border-style: none;
+    }
+    #로그인 {
+        left: 460px;
+        top: 640px;
+    }
+    #비밀번호 {
+        left: 767px;
+        top: 639px;
+    }
+    label[for="로그인"] {
+        position: fixed;
+        width: 220px;
+        height: 50px;
+        left: 475px;
+        top: 659px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+
+        color: #803434;
+    }
+    label[for="비밀번호"] {
+        position: fixed;
+        width: 240px;
+        height: 44px;
+        left: 770px;
+        top: 658px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #803434;
+    }
+</style>
+<body>
+    <img src="./join_page_img/small_logo.png" alt="작은로고" id="작은로고">
+    <div class="box">
+        <p>(사용자이름)님의 아이디는 _______ 입니다.</p>
+        <button id="로그인"><label for="로그인">로그인 하기</label></button>
+        <button id="비밀번호"><label for="비밀번호">비밀번호 찾기</label></button>
+    </div>
+</body>
+</html>
