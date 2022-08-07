@@ -76,19 +76,15 @@
             padding-left: 20px;
             color: #B45656;
         }
-        .auto-login {
-            position: absolute;
-            width: 150px;
-            height: 27px;
-            left: 360px;
-            top: 688px;
-        }
         .auto-login > input {
             position: absolute;
             width: 27px;
             height: 27px;
         }
         .auto-login > label {
+            top: 642px;
+            left: 354px;
+            position: relative;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
@@ -97,6 +93,44 @@
             text-align: center;
             color: #9F9292;
         }
+        input[type*="checkbox"] {
+            -webkit-appearance: none;
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            left: 360px;
+            top: 688px;
+            cursor: pointer;
+            outline: none !important;
+            border: 1px solid #9F9292;
+            background-color: #F1DEDE;
+            border-radius: 5px;
+        }
+        input[type="checkbox"]::before {
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            overflow: hidden;
+            transform: scale(0) translate(-50%, -50%);
+            line-height: 1;
+            border-radius: 5px;
+        }
+        input[type="checkbox"]:hover {
+            border-color: #9F9292;
+            border-radius: 5px;
+        }
+        input[type="checkbox"]:checked {
+            background-color: #F1DEDE;
+            border-color: #9F9292;
+            color: #9F9292;
+            border-radius: 5px;
+        }
+        input[type="checkbox"]:checked::before {
+        border-radius: 3px;
+        transform: scale(2) translate(-25%, -25%);
+        border-radius: 5px;
+    }
         .look_box {
             position: absolute;
             width: 688px;
