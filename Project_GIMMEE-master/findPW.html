@@ -1,0 +1,164 @@
+<!-- author: Jinseon Son -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기 화면</title>
+</head>
+<style>
+     body {
+        background-color: #F1DEDE;
+        width: 1440px;
+        height: 1024px;
+
+        }
+    #작은로고 {
+        width: 675px;
+        height: 284px;
+        margin-top: 41px;
+        right: 826px;
+        bottom: 699px;
+    }
+    p {
+        position: absolute;
+        width: 900px;
+        height: 39px;
+        left: 322px;
+        top: 446px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+
+        color: #000000;
+    }
+    input {
+        position: absolute;
+        width: 512px;
+        height: 38px;
+        border-style: none;
+        background-color: #C4C4C4;
+        left: 560px;
+        font-size: 20px;
+        color: #803434;
+    }
+    label[for="ID"] {
+        position: absolute;
+        width: 100px;
+        height: 39px;
+        left: 353px;
+        top: 539px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        text-align: center;
+
+        color: #803434;
+        margin-top: 34px;
+    }
+    label[for="이름"] {
+        position: absolute;
+        width: 65px;
+        height: 39px;
+        left: 353px;
+        top: 612px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #803434;
+        margin-top: 35px;
+    }
+    #ID {
+        position: absolute;
+        top: 539px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+        padding-left: 10px;
+    }
+    #이름 {
+        position: absolute;
+        top: 613px;
+        margin-top: 34px;
+        padding-left: 10px;
+    }
+    label[for="휴대전화"] {
+        position: absolute;
+        width: 140px;
+        height: 39px;
+        left: 353px;
+        top: 690px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: #803434;
+        margin-top: 34px;
+    }
+    #휴대전화 {
+        position: absolute;
+        top: 691px;
+        margin-top: 35px;
+        padding-left: 10px;
+    }
+    #비밀번호찾기 {
+        background-color: #FEFCC7;
+        border-radius: 20px;
+        border-style: none;
+        position: absolute;
+        width: 271px;
+        height: 75px;
+        left: 1095px;
+        top: 900px;
+        right: 74px;
+        bottom: 49px;
+    }
+    label[for="비밀번호찾기"]{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #B45656;
+        padding-left: 0%;
+    }
+</style>
+<body>
+    <img src="images/small_logo.png" alt="작은로고" id="작은로고">
+    <p>가입시 입력하신 아이디와 전화번호를 통해 찾을 수 있습니다.</p>
+    <div>
+        <span>
+            <label for="ID">아이디</label>
+            <input type="text" id="ID"/><br/>
+        </span>
+        <span>
+            <label for="이름">이름</label>
+            <input type="text" id="이름"/><br/>
+        </span>
+        <span>
+            <label for="휴대전화">휴대전화</label>
+            <input type="tel" id="휴대전화"/><br/>
+        </span>
+        <button id="비밀번호찾기"><label for="비밀번호찾기">비밀번호 찾기</label></button>
+    </div>
+</body>
+</html>
