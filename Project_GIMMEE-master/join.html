@@ -71,18 +71,18 @@
         margin-left: 30px;
         padding-left: 10px;
     }
-    #이름, #휴대전화, #authNo {
+    #name, #phone, #authNo {
         margin-top: 27px;
         width: 512px;
         height: 38px;
         padding-left: 10px;
     }
-    #이름 {
+    #name {
         margin-left: 163px;
         background-color: #C4C4C4;
         border-style: none;
     }
-    #휴대전화 {
+    #phone {
         background-color: #C4C4C4;
         margin-left: 104px;
         border-style: none;
@@ -171,10 +171,10 @@
         position: relative;
         top: -8px;
     }
-    .성별 > label{
+    .gender > label{
         margin-top: 33px;
     }
-    .생년월일 > label {
+    .date > label {
         margin-top: 39px;
     }
     #yy {
@@ -193,7 +193,7 @@
         height: 37px;
         text-align: center;
     }
-    .생년월일 > label > label > input {
+    .date > label > label > input {
         background-color: #F1DEDE;
         border: 1px solid #803434;
         border-radius: 5px;
@@ -230,40 +230,40 @@
     <div>
         <span class="id_box">
             <label>아이디</label>
-            <input type="text" id="id" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="id" required/>&nbsp;&nbsp;&nbsp;&nbsp;
         </span>
         <button id="중복확인버튼"><label for="중복확인">중복확인</label></button><br/>
         <span class="pw_box">
             <label>비밀번호</label>
-            <input type="password" id="pw" /><br/>
+            <input type="password" id="pw" required/><br/>
             <label>비밀번호 확인</label>
-            <input type="password" id="pw_check" /><br/>
+            <input type="password" id="pw_check" required/><br/>
         </span>
         </span class="group_box">
             <label>이름</label>
-            <input type="text" id="이름" /><br/>
+            <input type="text" id="name" required/><br/>
             <label>휴대전화</label>
-            <input type="tel" id="휴대전화" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="tel" id="phone" required/>&nbsp;&nbsp;&nbsp;&nbsp;
             <button id="인증요청버튼"><label for="인증요청">인증요청</label></button><br/>
             <label>인증번호 입력</label>
-            <input type="tel" id="authNo" /><br/>
-            <span class="성별">
+            <input type="tel" id="authNo" required/><br/>
+            <span class="gender">
                 <label for="성별">성별
-                    <input type="checkbox" name="성별" value="여자"/> 여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="성별" value="남자"/> 남자<br/>
+                    <input type="checkbox" name="성별" value="female"/> 여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="성별" value="male"/> 남자<br/>
                 </label>
             </span>
             <br/>
-            <span class="생년월일">
+            <span class="date">
                 <label>생년월일
                     <label for="년">
-                        <input type="text" id="yy" />&nbsp;년 
+                        <input type="text" id="yy" required/>&nbsp;년 
                     </label>
                     <label for="월">
-                        <input type="text" id="mm" />&nbsp;월
+                        <input type="text" id="mm" required/>&nbsp;월
                     </label>
                     <label for="일">
-                        <input type="text" id="dd" />&nbsp;일
+                        <input type="text" id="dd" required/>&nbsp;일
                     </label>
                 </label>    
             </span>
